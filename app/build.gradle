@@ -1,14 +1,23 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        androidkey {
+            keyAlias 'androidkey'
+            keyPassword 'testkey'
+            storeFile file('/Users/chimi3/sandbox/android2015/Keystore_files/android.jks')
+            storePassword 'testkey'
+        }
+    }
     compileSdkVersion 'android-MNC'
-    buildToolsVersion '22.0.1'
+    buildToolsVersion '23.0.0 rc1'
     defaultConfig {
         applicationId "com.kdomain.kkruups.myappportfolio"
         minSdkVersion 19
-        targetSdkVersion 22
+        targetSdkVersion 'MNC'
         versionCode 1
         versionName "1.0"
+        signingConfig signingConfigs.androidkey
     }
     buildTypes {
         release {
@@ -22,6 +31,8 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
+    }
+    productFlavors {
     }
 }
 
