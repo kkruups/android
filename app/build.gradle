@@ -10,7 +10,7 @@ android {
         }
     }
     compileSdkVersion 'android-MNC'
-    buildToolsVersion '23.0.0 rc1'
+    buildToolsVersion '23.0.0 rc2'
     defaultConfig {
         applicationId "com.kdomain.kkruups.myappportfolio"
         minSdkVersion 19
@@ -25,9 +25,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             debuggable false
             renderscriptDebuggable false
+            signingConfig signingConfigs.androidkey
         }
     }
-    buildToolsVersion '23.0.0 rc1'
+    buildToolsVersion '23.0.0 rc2'
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
