@@ -1,17 +1,15 @@
 package com.kdomain.kkruups.myappportfolio;
 
-import android.support.v7.app.ActionBarActivity;
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.CompoundButton;
-import android.widget.ToggleButton;
 import android.content.Context;
 import android.widget.Toast;
-import android.widget.CompoundButton.OnCheckedChangeListener;
+
 
 import static android.widget.Toast.*;
 import static com.kdomain.kkruups.myappportfolio.R.id.toggleButton1;
