@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My App Portfolio</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_1">App 1</string>
+    <string name="btn_2">App 2</string>
+    <string name="btn_3">App Library</string>
+    <string name="btn_4">App 3</string>
+    <string name="btn_5">App 4</string>
+</resources>
