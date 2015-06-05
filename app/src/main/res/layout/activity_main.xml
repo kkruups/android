@@ -14,63 +14,108 @@
 
     <ToggleButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
         android:text="@string/btn_1"
         android:id="@+id/toggleButton1"
         android:gravity="center|center_vertical"
         android:height="75dp"
         android:minWidth="250dp"
-        android:layout_above="@+id/toggleButton2"
-        android:layout_alignLeft="@+id/toggleButton2"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textColor="@android:color/black"
+        android:checked="false"
+        android:textStyle="bold"
+        android:textOn="@string/btn_1"
+        android:textOff="@string/btn_1"
+        android:background="#ff5b85"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp"
+        android:layout_alignParentEnd="true"
+        android:onClick="launchApp" />
 
     <ToggleButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
         android:text="@string/btn_2"
         android:id="@+id/toggleButton2"
-        android:layout_above="@+id/toggleButton3"
-        android:layout_alignLeft="@+id/toggleButton3"
         android:gravity="center"
         android:height="75dp"
         android:minWidth="250dp"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textOff="@string/btn_2"
+        android:textOn="@string/btn_2"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:background="#ff5b85"
+        android:layout_below="@+id/toggleButton1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentEnd="true"
+        android:onClick="launchApp" />
 
     <ToggleButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
         android:text="@string/btn_3"
         android:id="@+id/toggleButton3"
         android:gravity="center"
         android:height="75dp"
         android:minWidth="250dp"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/toggleButton4"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textOff="@string/btn_3"
+        android:textOn="@string/btn_3"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:background="#ff5b85"
+        android:layout_above="@+id/toggleButton4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="38dp"
+        android:layout_alignParentEnd="true"
+        android:onClick="launchApp" />
 
     <ToggleButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
         android:text="@string/btn_4"
         android:id="@+id/toggleButton4"
         android:gravity="center"
         android:height="75dp"
         android:minWidth="250dp"
-        android:layout_below="@+id/toggleButton3"
-        android:layout_alignLeft="@+id/toggleButton5"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textOn="@string/btn_4"
+        android:textOff="@string/btn_4"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:background="#ff5b85"
+        android:layout_above="@+id/toggleButton5"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="launchApp" />
 
     <ToggleButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
         android:text="@string/btn_5"
         android:id="@+id/toggleButton5"
-        android:layout_below="@+id/toggleButton4"
-        android:layout_centerHorizontal="true"
         android:gravity="center"
         android:height="75dp"
         android:minWidth="250dp"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textIsSelectable="false"
+        android:textOff="@string/btn_5"
+        android:textOn="@string/btn_5"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:background="#ff5b85"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:onClick="launchApp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -78,9 +123,9 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="My App Portfolio"
         android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
         android:textAlignment="center"
-        android:textColor="#734bff" />
+        android:textColor="#734bff"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
