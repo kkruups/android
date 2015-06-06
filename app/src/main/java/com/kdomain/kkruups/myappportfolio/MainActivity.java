@@ -4,15 +4,19 @@ package com.kdomain.kkruups.myappportfolio;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.content.Context;
+import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 import static android.widget.Toast.*;
 import static com.kdomain.kkruups.myappportfolio.R.id.toggleButton1;
+import static com.kdomain.kkruups.myappportfolio.R.layout.toast_layout;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -53,6 +57,24 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //creates custom Toast using layout linearlayout defined in toast_layout.xml
+    public Toast createToast(CharSequence outPutText){
+
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(toast_layout,
+                (ViewGroup) findViewById(R.id.toast_layout_root));
+
+        TextView text = (TextView) layout.findViewById(R.id.text);
+        text.setText(outPutText);
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.TOP | Gravity.CENTER, 0, 500);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        return toast;
+    }
+
+    //Currently launches toast for each button
     public void launchApp(View tButton){
            this.tButton = tButton;
 
@@ -95,8 +117,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.toggleButton6:
                 text= "Launches Capstone: My App";
-                toast=Toast.makeText(context, text, LENGTH_LONG);
-                toast.setGravity(Gravity.TOP | Gravity.CENTER, 0, 500);
+                toast=createToast(text);
+                //toast=Toast.makeText(context, text, LENGTH_LONG);
+                //toast.setGravity(Gravity.TOP | Gravity.CENTER, 0, 500);
                 toast.show();
                 break;
             default:
