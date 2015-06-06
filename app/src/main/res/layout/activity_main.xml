@@ -37,7 +37,8 @@
         android:padding="5dp"
         android:layout_below="@+id/textView1"
         android:layout_alignStart="@+id/toggleButton3"
-        android:layout_marginTop="77dp" />
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="10dp" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -57,7 +58,8 @@
         android:checked="false"
         android:padding="5dp"
         android:layout_below="@+id/toggleButton1"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -77,7 +79,8 @@
         android:checked="false"
         android:padding="5dp"
         android:layout_below="@+id/toggleButton2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -96,7 +99,9 @@
         android:onClick="launchApp"
         android:padding="5dp"
         android:layout_below="@+id/toggleButton3"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:checked="false" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -117,7 +122,8 @@
         android:onClick="launchApp"
         android:padding="5dp"
         android:layout_below="@+id/toggleButton4"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -133,7 +139,7 @@
         android:textOn="@string/btn_6"
         android:textColor="@android:color/black"
         android:textStyle="bold"
-        android:background="#ff5b85"
+        android:background="#ff0088"
         android:layout_alignWithParentIfMissing="false"
         android:onClick="launchApp"
         android:padding="5dp"

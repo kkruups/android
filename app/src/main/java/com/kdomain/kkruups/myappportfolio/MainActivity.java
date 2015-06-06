@@ -64,37 +64,37 @@ public class MainActivity extends AppCompatActivity {
         switch(tBtn){
 
             case toggleButton1:
-                text  = "Spotify";
+                text  = "Launches Spotify App";
                 toast=Toast.makeText(context, text, LENGTH_LONG);
                 toast.setGravity(Gravity.TOP | Gravity.CENTER, 0, 500);
                 toast.show();
                 break;
             case R.id.toggleButton2:
-                text= "Super Duo";
+                text= "Launches Super Duo App";
                 toast=Toast.makeText(context, text, LENGTH_LONG);
                 toast.setGravity(Gravity.TOP | Gravity.CENTER, 0, 500);
                 toast.show();
                 break;
             case R.id.toggleButton3:
-                text= "SD Lib App";
+                text= "Launches SD Lib App";
                 toast=Toast.makeText(context, text, LENGTH_LONG);
                 toast.setGravity(Gravity.TOP | Gravity.CENTER, 0, 500);
                 toast.show();
                 break;
             case R.id.toggleButton4:
-                text= "Build it Bigger";
+                text= "Launches Build it Bigger App";
                 toast=Toast.makeText(context, text, LENGTH_LONG);
                 toast.setGravity(Gravity.TOP | Gravity.CENTER, 0, 500);
                 toast.show();
                 break;
             case R.id.toggleButton5:
-                text= "XYZ Reader";
+                text= "Launches XYZ Reader App";
                 toast=Toast.makeText(context, text, LENGTH_LONG);
                 toast.setGravity(Gravity.TOP | Gravity.CENTER, 0, 500);
                 toast.show();
                 break;
             case R.id.toggleButton6:
-                text= "Capstone: My App";
+                text= "Launches Capstone: My App";
                 toast=Toast.makeText(context, text, LENGTH_LONG);
                 toast.setGravity(Gravity.TOP | Gravity.CENTER, 0, 500);
                 toast.show();
